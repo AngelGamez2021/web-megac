@@ -1,0 +1,77 @@
+.container {
+  background: url("../../assets/fondo.png");
+  background-repeat: no-repeat;
+  /* Para que no se repita */
+  background-position: center;
+  height: 920px;
+
+
+  /* HEADER */
+  header {
+
+    margin-bottom: 50px;
+
+    .principal {
+      width: 80%;
+      max-width: 1880px;
+      margin: auto;
+      overflow: hidden;
+      /* para quitar todo lo que sobra dentro del contenedor */
+      display: grid;
+      grid-template-rows: 80px 80px;
+      grid-template-columns: 1fr 1fr;
+
+
+      .img {
+        margin: 40px 0;
+        text-align: left;
+      }
+
+      .menu {
+        margin: 60px 0;
+        text-align: right;
+
+        a {
+          margin: 0 20px;
+          color: #000000;
+          display: inline-block;
+          /* para poder editar pading en enlaces */
+          text-decoration: none;
+          border-bottom: 2px solid transparent;
+          /* este lo ponemos porque al pasar el mouse con el hover, ya el tiene un espacio reservado pero transparente, si no estuviera, al pasar el mouse se añaden los dos pixeles en la pagina por el border bottom y se ve feo */
+          padding-bottom: 9px;
+          font-size: 1em;
+        }
+
+        a:hover {
+          border-bottom: 2px solid #000000;
+        }
+
+      }
+
+    }
+
+  }
+
+
+  .contenido {
+    display: grid;
+    grid-template-rows: 50px 50px;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 80px;
+    width: 80%;
+    max-width: 1880px;
+    margin: auto;
+
+    .multimedia {
+      padding: 30px 80px;
+    }
+
+    .qr {
+      padding-top: 140px;
+      padding-right: 40px;
+      text-align: right;
+    }
+  }
+
+}
